@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sudarshan Ahire - Professional Portfolio. Frontend Developer and M.Sc. Computer Applications student based in Pune, India.">
+    <meta name="author" content="Sudarshan Ahire">
+    <title>Sudarshan Ahire | Frontend Developer Portfolio</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Core & Responsive Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- ==========================================
+       1. LOADING PRELOADER
+       ========================================== -->
+    <div id="preloader">
+        <div class="loader-logo">SUDARSHAN<span>.</span></div>
+        <div class="loader-spinner">
+            <div class="loader-circle"></div>
+            <div class="loader-circle"></div>
+        </div>
+        <div class="loader-progress">LOADING... 0%</div>
+    </div>
+
+    <!-- ==========================================
+       2. SCROLL PROGRESS & FLOATING BACKGROUND SHAPES
+       ========================================== -->
+    <div class="scroll-progress"></div>
+    <div class="bg-glow-container">
+        <div class="bg-glow bg-glow-1"></div>
+        <div class="bg-glow bg-glow-2"></div>
+        <div class="bg-glow bg-glow-3"></div>
+    </div>
+
+    <!-- ==========================================
+       3. STICKY NAVBAR
+       ========================================== -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#home">SUDARSHAN<span>.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon-custom"></span>
+                <span class="navbar-toggler-icon-custom"></span>
+                <span class="navbar-toggler-icon-custom"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 navbar-collapse-custom">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certificates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==========================================
+       4. HERO SECTION
+       ========================================== -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Hero Content -->
+                <div class="col-lg-6 col-md-12 text-start order-2 order-lg-1">
+                    <span class="hero-greeting">HELLO, I'M</span>
+                    <h1 class="hero-name text-white">Sudarshan Ahire</h1>
+                    <div class="hero-title text-secondary">
+                        I'm a <span class="typed-text"></span>
+                    </div>
+                    <p class="hero-description">
+                        M.Sc. Computer Applications (Final Year) student. Passionate about building responsive web interfaces, coding clean layouts, and engineering user-friendly browser platforms.
+                    </p>
+                    <div class="hero-btns d-flex gap-3">
+                        <a href="assets/SUDARSHAN AHIRE _Resume.pdf" download class="btn-gradient">
+                            <i class="bi bi-file-earmark-pdf"></i> Download Resume
+                        </a>
+                        <a href="#projects" class="btn-outline-custom">
+                            <i class="bi bi-eye"></i> View Projects
+                        </a>
+                    </div>
+                    <!-- Social & Contact Quicklinks -->
+                    <div class="hero-social-links">
+                        <a href="https://github.com/sudarshan-ahire02" target="_blank" class="hero-social-icon" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="mailto:sudarshanahire622@gmail.com" class="hero-social-icon" title="Email">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                        <a href="tel:+919373196285" class="hero-social-icon" title="Phone">
+                            <i class="bi bi-telephone"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Premium 3D Workspace Illustration -->
+                <div class="col-lg-6 col-md-12 order-1 order-lg-2 mb-5 mb-lg-0">
+                    <div class="hero-illustration">
+                        <div class="workstation-container">
+                            <div class="mock-window">
+                                <div class="window-header">
+                                    <div class="dot dot-red"></div>
+                                    <div class="dot dot-yellow"></div>
+                                    <div class="dot dot-green"></div>
+                                    <div class="window-title">sudarshan_ahire.js</div>
+                                </div>
+                                <pre id="typing-code-terminal" class="window-body"></pre>
+                            </div>
+                            <!-- Floating 3D Technology badges -->
+                            <div class="floating-card-3d card-react">
+                                <i class="bi bi-bootstrap-fill text-info me-2"></i> Bootstrap 5
+                            </div>
+                            <div class="floating-card-3d card-node">
+                                <i class="bi bi-braces text-success me-2"></i> M.Sc. Student
+                            </div>
+                            <div class="floating-card-3d card-code">
+                                <code>&lt;JS /&gt;</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       5. ABOUT SECTION
+       ========================================== -->
+    <section class="section-padding" id="about">
+        <div class="container">
+            <div class="section-title-container text-center reveal">
+                <span class="section-subtitle">Introduction</span>
+                <h2 class="section-title text-white">About <span>Me</span></h2>
+            </div>
+            
+            <div class="row align-items-center g-5">
+                <!-- Info text (Fresher-friendly) -->
+                <div class="col-lg-6 reveal">
+                    <h3 class="mb-4 text-white">Who is Sudarshan?</h3>
+                    <p class="about-intro-text mb-4">
+                        I am a passionate Frontend Developer and M.Sc. Computer Applications (Final Year) student. I enjoy creating responsive websites and learning modern web technologies. I have built several academic and personal projects to strengthen my practical skills.
+                    </p>
+                    <p class="about-intro-text mb-5">
+                        I am looking for an opportunity to start my career as a Frontend or Web Developer where I can learn from experienced professionals and contribute to real-world projects.
+                    </p>
+                    
+                    <!-- Stats Section inside About -->
+                    <div class="row stat-container-row g-3">
+                        <div class="col-6 col-sm-3">
+                            <div class="glass-card stat-card">
+                                <span class="stat-num">10+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3">
+                            <div class="glass-card stat-card">
+                                <span class="stat-num">8+</span>
+                                <span class="stat-label">Skills</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3">
+                            <div class="glass-card stat-card">
+                                <span class="stat-num">100%</span>
+                                <span class="stat-label">Responsive</span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-3">
+                            <div class="glass-card stat-card">
+                                <span class="stat-num">∞</span>
+                                <span class="stat-label">Learning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Highlights Info Grid (Fresher Cards) -->
+                <div class="col-lg-6 reveal">
+                    <div class="info-grid">
+                        <div class="glass-card info-box">
+                            <div class="info-box-title">Education</div>
+                            <div class="info-box-desc">M.Sc. Computer Applications</div>
+                        </div>
+                        <div class="glass-card info-box">
+                            <div class="info-box-title">Current Status</div>
+                            <div class="info-box-desc">Final Year Student</div>
+                        </div>
+                        <div class="glass-card info-box">
+                            <div class="info-box-title">Projects</div>
+                            <div class="info-box-desc">Academic & Personal Projects</div>
+                        </div>
+                        <div class="glass-card info-box">
+                            <div class="info-box-title">Career Goal</div>
+                            <div class="info-box-desc">Frontend Developer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       6. SKILLS SECTION
+       ========================================== -->
+    <section class="section-padding bg-dark-card" id="skills" style="background-color: #0B0F19;">
+        <div class="container">
+            <div class="section-title-container text-center reveal">
+                <span class="section-subtitle">Proficiencies</span>
+                <h2 class="section-title text-white">My <span>Skills</span></h2>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Frontend skills -->
+                <div class="col-md-6 col-lg-3 reveal">
+                    <div class="glass-card h-100">
+                        <h3 class="skill-category-title">
+                            <i class="bi bi-display"></i> Frontend
+                        </h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Bootstrap</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React (Basic)</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend skills -->
+                <div class="col-md-6 col-lg-3 reveal">
+                    <div class="glass-card h-100">
+                        <h3 class="skill-category-title">
+                            <i class="bi bi-hdd-network"></i> Backend
+                        </h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js (Basic)</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Database skills -->
+                <div class="col-md-6 col-lg-3 reveal">
+                    <div class="glass-card h-100">
+                        <h3 class="skill-category-title">
+                            <i class="bi bi-database"></i> Database
+                        </h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MongoDB (Basic)</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools / Dev environment skills -->
+                <div class="col-md-6 col-lg-3 reveal">
+                    <div class="glass-card h-100">
+                        <h3 class="skill-category-title">
+                            <i class="bi bi-tools"></i> Tools & Methods
+                        </h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">GitHub</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">VS Code</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Responsive Web Design</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-bar" data-progress="95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       7. PROJECTS SECTION (ACADEMIC & PERSONAL)
+       ========================================== -->
+    <section class="section-padding" id="projects">
+        <div class="container">
+            <div class="section-title-container text-center reveal">
+                <span class="section-subtitle">Academic & Personal Work</span>
+                <h2 class="section-title text-white">My <span>Projects</span></h2>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="project-card-custom">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="Cafelio Cafe Management" class="project-img-custom">
+                            <div class="project-overlay-custom">
+                                <h4 class="project-title-custom">Cafelio</h4>
+                                <p class="project-desc-custom">Developed a responsive Cafe Management System for academic learning. Features POS Billing, Admin Dashboard, Queue Management, and Sales Reports.</p>
+                                <div class="tech-badge-container">
+                                    <span class="tech-badge">PHP</span>
+                                    <span class="tech-badge">MySQL</span>
+                                    <span class="tech-badge">Bootstrap</span>
+                                    <span class="tech-badge">JS</span>
+                                </div>
+                                <div class="project-detail">
+                                    <div class="project-links-custom">
+                                        <a href="https://github.com/sudarshan-ahire02" target="_blank" class="project-link-btn project-link-btn-primary">
+                                            <i class="bi bi-github"></i> GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="project-card-custom">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=600&q=80" alt="Music Masti Store" class="project-img-custom">
+                            <div class="project-overlay-custom">
+                                <h4 class="project-title-custom">Music Masti Store</h4>
+                                <p class="project-desc-custom">Academic project for buying and selling musical instruments with responsive browsing.</p>
+                                <div class="tech-badge-container">
+                                    <span class="tech-badge">HTML</span>
+                                    <span class="tech-badge">CSS</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                    <span class="tech-badge">PHP</span>
+                                    <span class="tech-badge">MySQL</span>
+                                </div>
+                                <div class="project-detail">
+                                    <div class="project-links-custom">
+                                        <a href="https://github.com/sudarshan-ahire02" target="_blank" class="project-link-btn project-link-btn-primary">
+                                            <i class="bi bi-github"></i> GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="project-card-custom">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1574375927938-d5a98e8fed85?auto=format&fit=crop&w=600&q=80" alt="Netflix Clone" class="project-img-custom">
+                            <div class="project-overlay-custom">
+                                <h4 class="project-title-custom">Netflix Clone</h4>
+                                <p class="project-desc-custom">Responsive UI Clone of Netflix streaming landing page showcasing modern visual design.</p>
+                                <div class="tech-badge-container">
+                                    <span class="tech-badge">HTML5</span>
+                                    <span class="tech-badge">CSS3</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                </div>
+                                <div class="project-detail">
+                                    <div class="project-links-custom">
+                                        <a href="https://github.com/sudarshan-ahire02" target="_blank" class="project-link-btn project-link-btn-primary">
+                                            <i class="bi bi-github"></i> GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="project-card-custom">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&w=600&q=80" alt="Weather Forecast Application" class="project-img-custom">
+                            <div class="project-overlay-custom">
+                                <h4 class="project-title-custom">Weather App</h4>
+                                <p class="project-desc-custom">Weather API project providing live weather forecasts and metrics based on geolocation queries.</p>
+                                <div class="tech-badge-container">
+                                    <span class="tech-badge">JavaScript</span>
+                                    <span class="tech-badge">Weather API</span>
+                                    <span class="tech-badge">CSS Grid</span>
+                                </div>
+                                <div class="project-detail">
+                                    <div class="project-links-custom">
+                                        <a href="https://github.com/sudarshan-ahire02" target="_blank" class="project-link-btn project-link-btn-primary">
+                                            <i class="bi bi-github"></i> GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="project-card-custom">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?auto=format&fit=crop&w=600&q=80" alt="Calculator App" class="project-img-custom">
+                            <div class="project-overlay-custom">
+                                <h4 class="project-title-custom">Calculator</h4>
+                                <p class="project-desc-custom">JavaScript Calculator. Features clear user inputs, standard operations, and responsive grid layouts.</p>
+                                <div class="tech-badge-container">
+                                    <span class="tech-badge">HTML5</span>
+                                    <span class="tech-badge">CSS3</span>
+                                    <span class="tech-badge">JavaScript</span>
+                                </div>
+                                <div class="project-detail">
+                                    <div class="project-links-custom">
+                                        <a href="https://github.com/sudarshan-ahire02" target="_blank" class="project-link-btn project-link-btn-primary">
+                                            <i class="bi bi-github"></i> GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="col-md-6 col-lg-4 reveal">
+                    <div class="project-card-custom">
+                        <div class="project-img-container">
+                            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80" alt="Personal Portfolio Website" class="project-img-custom">
+                            <div class="project-overlay-custom">
+                                <h4 class="project-title-custom">Personal Portfolio</h4>
+                                <p class="project-desc-custom">Responsive Portfolio Website displaying academic projects, skillset meters, and certificates.</p>
+                                <div class="tech-badge-container">
+                                    <span class="tech-badge">HTML5</span>
+                                    <span class="tech-badge">CSS3</span>
+                                    <span class="tech-badge">Bootstrap 5</span>
+                                    <span class="tech-badge">JS</span>
+                                </div>
+                                <div class="project-detail">
+                                    <div class="project-links-custom">
+                                        <a href="https://github.com/sudarshan-ahire02" target="_blank" class="project-link-btn project-link-btn-primary">
+                                            <i class="bi bi-github"></i> GitHub
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       8. EDUCATION (VERTICAL TIMELINE)
+       ========================================== -->
+    <section class="section-padding" id="education" style="background-color: #0B0F19;">
+        <div class="container">
+            <div class="section-title-container text-center reveal">
+                <span class="section-subtitle">Academic Journey</span>
+                <h2 class="section-title text-white">My <span>Education</span></h2>
+            </div>
+            
+            <div class="timeline-container reveal">
+                <div class="timeline-line"></div>
+                
+                <!-- Timeline item 1 (BSc) -->
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021 – 2025</div>
+                    <div class="glass-card timeline-card">
+                        <h4>Bachelor of Science</h4>
+                        <h5>Computer Science</h5>
+                        <p>Established a core foundation in computing theory, programming parameters, algorithms, and local data schemas.</p>
+                    </div>
+                </div>
+                
+                <!-- Timeline item 2 (MSc) -->
+                <div class="timeline-item timeline-item-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 – 2027</div>
+                    <div class="glass-card timeline-card">
+                        <h4>Master of Science</h4>
+                        <h5>Computer Applications (Final Year)</h5>
+                        <p>Specializing in enterprise application models, software engineering systems, and responsive browser design workflows.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       9. CERTIFICATIONS SECTION
+       ========================================== -->
+    <section class="section-padding" id="certifications">
+        <div class="container">
+            <div class="section-title-container text-center reveal">
+                <span class="section-subtitle">Credentials</span>
+                <h2 class="section-title text-white">My <span>Certificates</span></h2>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Cert 1 -->
+                <div class="col-md-12 col-lg-4 reveal">
+                    <div class="cert-card h-100">
+                        <div class="cert-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h4 class="cert-title text-white">Cyber Security Awareness Workshop</h4>
+                        <span class="cert-issuer">Completed Professional Development Program</span>
+                    </div>
+                </div>
+                
+                <!-- Cert 2 -->
+                <div class="col-md-12 col-lg-4 reveal">
+                    <div class="cert-card h-100">
+                        <div class="cert-icon">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+                        <h4 class="cert-title text-white">Generative AI Content Creation Workshop</h4>
+                        <span class="cert-issuer">Emerging Technologies Interactive Workshop</span>
+                    </div>
+                </div>
+                
+                <!-- Cert 3 -->
+                <div class="col-md-12 col-lg-4 reveal">
+                    <div class="cert-card h-100">
+                        <div class="cert-icon">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <h4 class="cert-title text-white">Web Development</h4>
+                        <span class="cert-issuer">Acmegrade Program Certification</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       10. CONTACT SECTION
+       ========================================== -->
+    <section class="section-padding" id="contact" style="background-color: #0B0F19;">
+        <div class="container">
+            <div class="section-title-container text-center reveal">
+                <span class="section-subtitle">Reach Out</span>
+                <h2 class="section-title text-white">Get In <span>Touch</span></h2>
+            </div>
+            
+            <div class="row g-5">
+                <!-- Contact Details Left -->
+                <div class="col-lg-5 reveal">
+                    <h3 class="mb-4 text-white">Let's build something epic!</h3>
+                    <p class="text-secondary mb-5">
+                        I am currently open for opportunities, campus placements, and junior developer internship positions. If you have any inquiries or just want to connect, feel free to drop a message!
+                    </p>
+                    
+                    <div class="contact-info-container">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <div>
+                                <div class="contact-info-label">Call Me</div>
+                                <a href="tel:+919373196285" class="contact-info-value">+91 9373196285</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="contact-info-label">Email Me</div>
+                                <a href="mailto:sudarshanahire622@gmail.com" class="contact-info-value">sudarshanahire622@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="bi bi-github"></i>
+                            </div>
+                            <div>
+                                <div class="contact-info-label">GitHub</div>
+                                <a href="https://github.com/sudarshan-ahire02" target="_blank" class="contact-info-value">github.com/sudarshan-ahire02</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <div>
+                                <div class="contact-info-label">Location</div>
+                                <span class="contact-info-value">Pune, Maharashtra, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form Right -->
+                <div class="col-lg-7 reveal">
+                    <div class="glass-card">
+                        <!-- Redirect form action directly to local message php processor -->
+                        <form action="massege.php" method="POST" id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label text-secondary small">Your Name</label>
+                                    <input type="text" class="form-control form-glass-input" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label text-secondary small">Your Email</label>
+                                    <input type="email" class="form-control form-glass-input" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="subject" class="form-label text-secondary small">Subject</label>
+                                    <input type="text" class="form-control form-glass-input" id="subject" name="subject" placeholder="Project collaboration..." required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label text-secondary small">Message</label>
+                                    <textarea class="form-control form-glass-input" id="message" name="message" rows="5" placeholder="Hi Sudarshan, I'd love to chat about..." required></textarea>
+                                </div>
+                                <div class="col-12 text-end mt-4">
+                                    <button type="submit" class="btn-gradient">
+                                        <i class="bi bi-send"></i> Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="formFeedback" class="mt-3 text-success d-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+       11. FOOTER
+       ========================================== -->
+    <footer class="footer-section text-center text-secondary">
+        <div class="container d-flex flex-column align-items-center">
+            <h3 class="text-white mb-3">SUDARSHAN<span>.</span></h3>
+            <p class="small mb-4">Designed & Developed by Sudarshan Ahire | &copy; 2026 All Rights Reserved.</p>
+            <div class="d-flex gap-3 mb-4">
+                <a href="https://github.com/sudarshan-ahire02" target="_blank" class="text-secondary fs-5 hover-accent" style="transition: var(--transition-smooth);"><i class="bi bi-github"></i></a>
+                <a href="mailto:sudarshanahire622@gmail.com" class="text-secondary fs-5 hover-accent" style="transition: var(--transition-smooth);"><i class="bi bi-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Sticky Button -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <!-- Bootstrap 5 Bundle with Popper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script Logic File -->
+    <script src="js/script.js"></script>
+</body>
+</html>

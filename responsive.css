@@ -1,0 +1,251 @@
+/* 
+================================================================
+RESPONSIVE LAYOUT STYLESHEET
+Client: Sudarshan Pradip Ahire
+================================================================
+*/
+
+/* Extra Large Screens */
+@media (max-width: 1400px) {
+    .hero-name {
+        font-size: 3.5rem;
+    }
+}
+
+/* Large Screens (Laptops) */
+@media (max-width: 1200px) {
+    .hero-name {
+        font-size: 3.2rem;
+    }
+    .hero-illustration {
+        height: 400px;
+    }
+    .workstation-container {
+        max-width: 420px;
+        height: 300px;
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media (max-width: 991px) {
+    .section-padding {
+        padding: 80px 0;
+    }
+
+    .navbar-custom {
+        padding: 15px 0;
+        background-color: var(--nav-bg) !important;
+        backdrop-filter: blur(20px) !important;
+        -webkit-backdrop-filter: blur(20px) !important;
+        border-bottom: 1px solid var(--card-border) !important;
+    }
+
+    /* Collapse nav links drawer style */
+    .navbar-collapse-custom {
+        background: rgba(15, 23, 42, 0.98);
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 30px;
+        border-bottom: 1px solid var(--card-border);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .navbar-custom .nav-link {
+        padding: 12px 0 !important;
+        font-size: 1.1rem;
+    }
+
+    .navbar-custom .nav-link::after {
+        left: 0;
+    }
+
+    .navbar-custom .nav-link:hover::after,
+    .navbar-custom .nav-link.active::after {
+        width: 40px;
+    }
+
+    /* Hero Section Stacking */
+    .hero-section {
+        padding-top: 120px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    .hero-description {
+        margin: 0 auto 30px;
+    }
+
+    .hero-btns {
+        justify-content: center;
+    }
+
+    .hero-social-links {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .hero-illustration {
+        margin-top: 30px;
+        height: 350px;
+    }
+
+    .workstation-container {
+        transform: rotateX(8deg) rotateY(-10deg) rotateZ(2deg);
+        max-width: 380px;
+        height: 270px;
+    }
+
+    /* About Section Grid stack */
+    .info-grid {
+        margin-top: 40px;
+    }
+
+    /* Vertical Timeline Shifts to Left-aligned for Tablet */
+    .timeline-line {
+        left: 30px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .timeline-item-left,
+    .timeline-item-right {
+        left: 0 !important;
+        padding-left: 60px !important;
+        padding-right: 0 !important;
+        text-align: left !important;
+    }
+
+    .timeline-dot {
+        left: 22px !important;
+        right: auto !important;
+    }
+
+    .timeline-item-left .timeline-dot {
+        border-color: var(--accent-color);
+    }
+
+    .timeline-item-right .timeline-dot {
+        border-color: var(--primary-color);
+    }
+
+    /* Stats container adjust */
+    .stat-container-row {
+        gap: 20px;
+    }
+}
+
+/* Small Screens (Mobile phones) */
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 2.1rem;
+    }
+
+    .hero-name {
+        font-size: 2.5rem;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .glass-card {
+        padding: 20px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    .hero-btns .btn-gradient,
+    .hero-btns .btn-outline-custom {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .project-card-custom {
+        height: 350px;
+    }
+
+    .project-overlay-custom {
+        padding: 20px;
+    }
+
+    /* Make illustrations and 3D mockups fit neatly in mobile view */
+    .workstation-container {
+        max-width: 320px;
+        height: 230px;
+    }
+
+    .floating-card-3d {
+        padding: 8px 12px;
+        font-size: 0.75rem;
+    }
+
+    .card-react {
+        right: -10px;
+        top: -10px;
+    }
+
+    .card-node {
+        left: -15px;
+        bottom: 10px;
+    }
+
+    .card-code {
+        right: -15px;
+        top: 45%;
+    }
+
+    /* Contacts Form and info spacing */
+    .contact-info-container {
+        margin-bottom: 40px;
+    }
+
+    /* Sticky back to top button scale */
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+/* Small devices (Very old or small phones) */
+@media (max-width: 480px) {
+    .hero-name {
+        font-size: 2.1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .workstation-container {
+        max-width: 280px;
+        height: 200px;
+    }
+
+    .window-body {
+        font-size: 0.75rem;
+        padding: 10px;
+    }
+}
